@@ -1,0 +1,19 @@
+{
+  "name": "cypress-project",
+  "version": "1.0.0",
+  "description": "A project to run Cypress tests in a specific order",
+  "main": "index.js",
+  "scripts": {
+    "test:productSearch": "npx cypress run --spec \"cypress/e2e/ProductSearchTest.spec.cy.js\"",
+    "test:all": "npm run test:productSearch",
+
+     "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.0",
+    "mochawesome": "^7.1.3"
+  },
+  "dependencies": {
+    "mochawesome-merge": "^4.3.0"
+  }
+}
